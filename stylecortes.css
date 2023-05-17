@@ -1,0 +1,565 @@
+*{
+    box-sizing: border-box;/* cuando se agregue padding, margin, border no crezcan más del tamaño dado */
+
+}
+
+.slider{
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 900%;
+
+    animation: slider 20s infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes slider{
+    0%{margin-left:0}
+    10%{margin-left: 0}
+
+    20%{margin-left: -50%;}
+    30%{margin-left: -50%;}
+
+    40%{margin-left: -200%;}
+    50%{margin-left: -200%;}
+
+    60%{margin-left: -400%;}
+    70%{margin-left: -400%;}
+
+    80%{margin-left: -550%}
+    90%{margin-left: -550%}
+
+    95%{margin-left: -750%}
+    100%{margin-left: -750%}
+
+
+
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img{
+    width: 80%;
+    height: 90%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+ul{list-style: none;}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;/* el body siempre viene con un margin en las esquinas */
+}
+
+button{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,5);
+    box-shadow: 2px 1px 7px rgba(0,0,0,10);
+    color: black;
+    background-color: rgb(242, 116, 5);
+}
+
+button:hover{
+    background-color: rgb(240, 3, 3);
+}
+
+.container{
+    max-width: 2000px;
+    margin: auto;
+
+}
+
+header{
+    background-color: rgb(140, 3, 3);
+}
+
+header .logo{/* lo que esté adentro de header con esa notación */
+    margin: 0;
+    padding: 25px 30px;/* primer valor padding arriba y abajo, segundo costados */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(img/Logobien2.png);
+    width: 150px;
+    height: 37.5px;
+
+
+}
+
+header .container{
+    display: flex;/* para centrarlo */
+    flex-direction: column;/* hace que las cosas se ordenen en una columna */
+    
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header :hover{
+    color: rgb(242, 193, 46);
+    text-decoration: underline;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;/* para que cambie a columna porque esté en fila */
+    height: 90vh;
+    color: black;
+    background-color: black;
+
+}
+
+#hero h1{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    background-color: rgb(140, 3, 3);
+    margin: 50px;
+    border-radius: 12px;
+}
+
+#g7space .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+
+#g7space .container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 1.5rem;
+}
+
+#secmenu{
+    color: black;
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+}
+ 
+#secmenu .container{
+    padding: 200px 0px;
+   
+}
+
+#secmenu h2{
+    margin-top: 0;
+    font-size: 3em ;
+}
+
+#secmenu p{
+    display: none;
+}
+
+#secmenu .sec{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.sec:first-child{
+    background-image: url(img/ArracheraAbiertaMTY.png);
+   
+}
+
+.sec:nth-child(2){
+    background-image: url(img/PorterHouseSono.png);
+   
+}
+
+.sec:nth-child(3){
+    background-image: url(img/TomahawkSonoraEspe.png);
+}
+
+:root{
+    --verdeo: rgb(56, 157, 76);
+    --blanco: white;
+}
+
+.color{
+    color: var(--blanco);
+    -webkit-text-stroke: 1.30px black;
+}
+
+#caracte {
+    width: 100vw;
+}
+
+#caracte .container{
+    text-align: center;
+    padding: 15px 12px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+}
+
+#caracte .container .imcara{
+    width: 190px;
+    height: 120px;
+    background-image: url(img/g73.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 30px;
+    justify-self: center;
+}
+
+#caracte li{
+    margin: 15px 0px;
+    font-weight: bold;
+    
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(140, 3, 3);
+}
+
+.footer{
+  font-size: 18px;  
+}
+
+.footer:active{
+    color: rgb(123, 126, 125);
+}
+
+footer p{
+    margin: 0;
+}
+
+footer .container{
+    height: 200px;
+}
+
+@media (min-width:720px) { /* PARA DESKTOP */
+
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header a{
+        padding: 5px 12px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    header .logo{
+        width: 300px;
+        height: 75px;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #g7space .container{
+        justify-content: center;
+    }
+
+    #g7space .imgcontainer{
+        background-image: url(img/TopSirlonEspe.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 400px;
+    }
+
+    #g7space h2{
+        max-width: 600px;
+        
+        
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #secmenu .secciones{
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    #secmenu p{
+        display: block;
+        margin-bottom: 30px;
+        color: black;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 0.5rem;
+
+    }
+
+    #secmenu h3{
+        margin: 0;
+        
+    }
+
+    .slider ul{
+        padding: 0;
+        display: flex;
+        width: 800%;
+    
+        animation: slider 20s infinite;
+        animation-timing-function: linear;
+        
+    }
+    
+    @keyframes slider{
+        0%{margin-left:0}
+        15%{margin-left: 0}
+    
+        20%{margin-left: -160%;}
+        35%{margin-left: -160%;}
+    
+        40%{margin-left: -320%;}
+        55%{margin-left: -320%;}
+    
+        60%{margin-left: -480%;}
+        75%{margin-left: -480%;}
+    
+        80%{margin-left: -640%}
+        95%{margin-left: -640%}
+
+        98%{margin-left: -800%}
+        100%{margin-left: -800%}
+    
+    }
+
+    #secmenu .sec{
+        padding: 40px;
+        box-shadow: 5px 8px 12px 2px;
+    }
+
+    .slider{
+        width: 65%;
+        height: 350px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider li img{
+        width: 40%;
+        height: 70%;
+    }
+
+    #caracte .container{
+        padding: 0;
+        
+        width: 100%;
+    
+        animation: camb 20s infinite;
+        animation-timing-function: linear;
+        
+    }
+    
+    @keyframes camb{
+        0%{background-color: rgb(123, 64, 241);}
+        10%{background-color: rgb(187, 138, 239);}
+    
+        20%{background-color: rgb(43, 61, 226);}
+        30%{background-color: rgb(113, 197, 236);}
+    
+        40%{background-color: rgb(55, 132, 32);}
+        50%{background-color: rgb(39, 211, 68);}
+    
+        60%{background-color: rgb(174, 185, 72);}
+        70%{background-color: rgb(234, 240, 50);}
+    
+        80%{background-color: rgb(191, 123, 45);}
+        90%{background-color: rgb(235, 179, 46);}
+    
+        95%{background-color: rgb(221, 64, 44);}
+        100%{background-color:rgb(232, 113, 137);}
+    
+    
+    
+    }
+
+    #caracte {
+        width: 100vw;
+    }
+    
+    #caracte .container{
+        text-align: center;
+        padding: 15px 12px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+    
+    }
+    
+    #caracte .container .imcara{
+        width: 400px;
+        height: 300px;
+        background-image: url(img/g73.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 50px;
+        border-radius: 10px;
+        box-shadow: 10px 8px 30px;
+        justify-self: center;
+    }
+    
+    #caracte li{
+        margin: 15px 0px;
+        font-weight: bold;
+        
+    }
+
+} /* cierre de media query */
+
+
+
+#caracte .container{
+    padding: 0;
+    
+    width: 100%;
+
+    animation: camb 20s infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes camb{
+    0%{background-color: rgb(123, 64, 241);}
+    10%{background-color: rgb(187, 138, 239);}
+
+    20%{background-color: rgb(43, 61, 226);}
+    30%{background-color: rgb(113, 197, 236);}
+
+    40%{background-color: rgb(55, 132, 32);}
+    50%{background-color: rgb(39, 211, 68);}
+
+    60%{background-color: rgb(174, 185, 72);}
+    70%{background-color: rgb(234, 240, 50);}
+
+    80%{background-color: rgb(191, 123, 45);}
+    90%{background-color: rgb(235, 179, 46);}
+
+    95%{background-color: rgb(221, 64, 44);}
+    100%{background-color:rgb(232, 113, 137);}
+
+
+ 
+}
+
+#promos{
+    position: relative;
+}
+
+#promos .promo{
+    background-image: url(img/promosin.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 10px;
+
+    
+    animation: prom 5s ease 0s infinite normal forwards;
+}
+
+@keyframes prom{
+    0%,100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+ 
+.big{
+    font-size: 1.8rem;
+}

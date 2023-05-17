@@ -1,0 +1,23 @@
+[
+{
+    "corte": "Porter House $340.00",
+    "kg": 800,
+    "piezas": 1,
+    "marmol": 2,
+    "saz": "si"
+},
+{
+    "corte": "Arrachera Marinada $705.00",
+    "kg": 800,
+    "piezas": 5,
+    "marmol": 2,
+    "saz": "no"
+},
+{
+    "corte": "Tomahawk Sonora $1,320.00",
+    "kg": 1000,
+    "piezas": 4,
+    "marmol": 5,
+    "saz": "no"
+}
+]
